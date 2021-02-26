@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\static\main.css">
+    <style>
+       
+        .search-google-btn {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            border-radius: .5em;
+            height: 2.5em;
+            color: white;
+            padding: 1em;
+            padding-top : .7em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 2em;
+            width: 20em;
+            margin-top: 8em;
+            margin-left: 12em;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Name : {{rec_name}} </h1>
+    <div class="start-btn">
+        <form action="/search/" method="POST">
+            <input type="submit" class="search-google-btn" value="Search for the person's account">
+        </form>
+    </div> 
+    
+    
+</body>
+</html>

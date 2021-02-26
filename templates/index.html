@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="\static\main.css">
+    <style>
+        body {
+            background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-blue-face-recognition-bio-technology-poster-background-image_195699.jpg");
+            background-size: cover;
+        }
+
+        .container {
+            background-color:rgb(10, 10, 10);
+            width: 40.5em;
+            border: .5em solid black;
+            border-radius: .5em;
+            margin-left: 20em;
+            margin-top: -.5em;
+            padding: .1em;
+            padding-bottom: .1em;
+        }
+       
+        .stop-cam-btn {
+            background-color: rgb(214, 34, 34); /* Green */
+            border: none;
+            border-radius: .5em;
+            height: 2.5em;
+            color: white;
+            padding: 1em;
+            padding-top : .7em;
+            padding-right: .5em;
+            padding-left: .7em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .video-frame {
+            border: .3em solid #5d5959;
+            margin-bottom: .2em;
+        }
+
+        .stop-btn {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; margin-top: 0em; color: cornsilk;">Displaying ....</h1>
+    <figure>
+    <div class="container">
+        <img src="{{ url_for('video_feed') }}" class="video-frame" >
+        <div class="stop-btn">
+            <form action="/video_feed" method="POST">
+                <input type="submit" class="stop-cam-btn" value="Stop Camera">
+            </form>
+        </div>
+    </div>
+    </figure>
+</body>
+</html>
