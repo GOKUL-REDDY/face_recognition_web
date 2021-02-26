@@ -1,0 +1,13 @@
+certifi==2020.6.20
+cmake==3.18.0
+dlib @ file:///D:/bld/dlib_1596536251519/work
+face-recognition==1.3.0
+face-recognition-models @ git+https://github.com/ageitgey/face_recognition_models@e67de717267507d1e9246de95692eb8be736ab61
+git-clone==1.0.6
+mkl-service==2.3.0
+numpy @ file:///D:/bld/numpy_1595523080086/work
+opencv-python==4.3.0.36
+Pillow==7.2.0
+scipy @ file:///C:/ci/scipy_1592930618155/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1590081179328/work
+wincertstore==0.2
