@@ -1,0 +1,8 @@
+.container {
+    background-color: blue;
+    width: 40em;
+    border: 1em solid black;
+    border-radius: .5em;
+    margin-left: 10em;
+    padding: 1em;
+}
